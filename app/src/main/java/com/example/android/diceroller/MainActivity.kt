@@ -17,6 +17,7 @@
 package com.example.android.diceroller
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -27,5 +28,11 @@ class MainActivity : AppCompatActivity() {
 
         //Mi solucion empieza aquí
         //prueba de autor
+
+        val rollButton: Button = findViewById(R.id.roll_button)
+        rollButton.setOnClickListener {
+
+        }
+
     }
 }
