@@ -18,8 +18,10 @@ package com.example.android.diceroller
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,8 +34,19 @@ class MainActivity : AppCompatActivity() {
 
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener {
-            Toast.makeText(this, R.string.ConfiTextoBoton, Toast.LENGTH_SHORT).show()
+            //Pongo Tosat de comentario y llamo a la funcion de girar al dado
+            //Cuando pulse el boton me generara un numero que despues mostrara en pantalla
+            //Toast.makeText(this, R.string.ConfiTextoBoton, Toast.LENGTH_SHORT).show()
+            girarDado()
         }
+
+    }
+    //Creo la funcion random que me devolvera un numero que sera despues lo que muestre en el layout
+    private fun girarDado() {
+        val randomInt = Random().nextInt(6) + 1
+
+        val resultText: TextView = findViewById(R.id.textoQueMostrar)
+        resultText.text = randomInt.toString()
 
     }
 }
