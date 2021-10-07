@@ -2,4 +2,5 @@
     <string name="app_name">Dado Giratorio</string>
     <!--  (04) Extract the text from the button to strings.xml -->
     <string name="BotonTexto">Lanzar</string>
+    <string name="ConfiTextoBoton">Dado Lanzado</string>
 </resources>
