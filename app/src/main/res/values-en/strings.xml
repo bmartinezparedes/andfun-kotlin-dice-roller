@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dice Roll</string>
+    <!--  (04) Extract the text from the button to strings.xml -->
+    <string name="BotonTexto">Throw</string>
+</resources>
