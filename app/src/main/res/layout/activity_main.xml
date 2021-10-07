@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
-        android:text="Boton"
+        android:text="@string/BotonTexto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -46,12 +46,12 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- TODO (01) Remove the code above and add the LinearLayout code from the classroom -->
+    <!--  (01) Remove the code above and add the LinearLayout code from the classroom -->
 
-    <!-- TODO (02) Add the Button
+    <!--  (02) Add the Button
          Use "wrap_content" for its width and height
          Use "center_horizontal" for the layout_gravity -->
 
-    <!-- TODO (03) Position the views
+    <!--  (03) Position the views
          Remember to set the orientation of the LinearLayout to vertical
          and use layout_gravity to align the elements so they are centered as expected -->
