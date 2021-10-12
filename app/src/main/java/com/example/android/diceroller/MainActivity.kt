@@ -18,8 +18,8 @@ package com.example.android.diceroller
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
@@ -44,9 +44,19 @@ class MainActivity : AppCompatActivity() {
     //Creo la funcion random que me devolvera un numero que sera despues lo que muestre en el layout
     private fun girarDado() {
         val randomInt = Random().nextInt(6) + 1
+        //Creo una variable en la que dependiendo del numero random que le llegue cargara una imagen
+        val drawableResource = when (randomInt){
+            1 -> R.drawable.cara1
+            2 -> R.drawable.cara2
+            3 -> R.drawable.cara3
+            4 -> R.drawable.cara4
+            5 -> R.drawable.cara5
+            else -> R.drawable.cara6
+        }
+        //Aquí creo la variable de imagen del dado que se enviara a mostrar
+        val imagDado: ImageView= findViewById(R.id.imagenDado)
+        imagDado.setImageResource(drawableResource)
 
-        val resultText: TextView = findViewById(R.id.textoQueMostrar)
-        resultText.text = randomInt.toString()
 
     }
 }
