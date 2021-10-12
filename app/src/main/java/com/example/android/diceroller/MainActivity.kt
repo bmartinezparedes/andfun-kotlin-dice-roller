@@ -43,9 +43,11 @@ class MainActivity : AppCompatActivity() {
     }
     //Creo la funcion random que me devolvera un numero que sera despues lo que muestre en el layout
     private fun girarDado() {
-        val randomInt = Random().nextInt(6) + 1
+        /*val randomInt = Random().nextInt(6) + 1*/
+        //random que va desde 0 al 6 ambos no incluidos
+        val mirandom=(0 until 6).random()
         //Creo una variable en la que dependiendo del numero random que le llegue cargara una imagen
-        val drawableResource = when (randomInt){
+        val drawableResource = when (mirandom){
             1 -> R.drawable.cara1
             2 -> R.drawable.cara2
             3 -> R.drawable.cara3
